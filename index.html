@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Job Listings</title>
+
+</head>
+<body>
+
+  <img class="headerBgDesk" src="images/bg-header-desktop.svg" alt="Header imagem">
+  <img class="headerBgMobile" src="images/bg-header-mobile.svg" alt="Header imagem">
+
+  <div class="container">
+
+    <div class="searchBoxContainer">
+      <input type="text" id="searchBar" name="searchBar" placeholder="Search for Roles, Companies, Position, Level, Contract, Location, Languages or Tools...">
+      <button onclick="search()" name="searchButton"></button>
+    </div>
+
+    <ul id="jobList">
+      <li>
+        <div class="jobCardContainer" >
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/photosnap.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+            <!-- Item Start -->
+            <p class="jobCompany">Photosnap <span class="newTag">NEW!</span> <span class="featureTag">FEATURED</span></p>
+            <p class="jobTitle">Senior Frontend Developer</p>
+            <p class="jobDetails">1d ago • Full Time • USA only</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Frontend</span>
+              <span>Senior</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+    
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/manage.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">Manage <span class="newTag">NEW!</span> <span class="featureTag">FEATURED</span></p>
+              <p class="jobTitle">Fullstack Developer</p>
+              <p class="jobDetails">1d ago • Part Time • Remote</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Fullstack</span>
+              <span>Midweight</span>
+              <span>Python</span>
+              <span>React</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/account.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">Account <span class="newTag">NEW!</span></p>
+              <p class="jobTitle">Junior Frontend Developer</p>
+              <p class="jobDetails">2d ago • Part Time • USA only</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Frontend</span>
+              <span>Junior</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Sass</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/myhome.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">MyHome</p>
+              <p class="jobTitle">Junior Frontend Developer</p>
+              <p class="jobDetails">5d ago • Contract • USA only</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Frontend</span>
+              <span>Junior</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/loop-studios.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">Loop Studios</p>
+              <p class="jobTitle">Software Engineer</p>
+              <p class="jobDetails">1w ago • Full Time • Worldwide</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Fullstack</span>
+              <span>Midweight</span>
+              <span>JavaScript</span>
+              <span>Ruby</span>
+              <span>Sass</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/faceit.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">FaceIt</p>
+              <p class="jobTitle">Junior Backend Developer</p>
+              <p class="jobDetails">2w ago • Full Time • UK only</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Backend</span>
+              <span>Junior</span>
+              <span>Ruby</span>
+              <span>RoR</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/shortly.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">Shortly</p>
+              <p class="jobTitle">Junior Developer</p>
+              <p class="jobDetails">2w ago • Full Time • Worldwide</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Frontend</span>
+              <span>Junior</span>
+              <span>HTML</span>
+              <span>JavaScript</span>
+              <span>Sass</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/insure.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">Insure</p>
+              <p class="jobTitle">Junior Frontend Developer</p>
+              <p class="jobDetails">2w ago • Full Time • USA only</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Frontend</span>
+              <span>Junior</span>
+              <span>Vue</span>
+              <span>JavaScript</span>
+              <span>Sass</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/eyecam-co.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">Eyecam Co.</p>
+              <p class="jobTitle">Full Stack Engineer</p>
+              <p class="jobDetails">3w ago • Full Time • Worldwide</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Fullstack</span>
+              <span>Midweight</span>
+              <span>JavaScript</span>
+              <span>Django</span>
+              <span>Python</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+
+      <li>
+        <div class="jobCardContainer">
+          <div class="jobImgContainer">
+            <img class="jobIcon" src="images/the-air-filter-company.svg" alt="">
+          </div>
+          <div class="jobDescContainer">
+              <!-- Item Start -->
+              <p class="jobCompany">The Air Filter Company</p>
+              <p class="jobTitle">Front-end Dev</p>
+              <p class="jobDetails">1mo ago • Part Time • Worldwide</p>
+          </div>
+          <div class="jobTagsContainer">
+            <p class="jobTags">
+              <span>Frontend</span>
+              <span>Junior</span>
+              <span>React</span>
+              <span>Sass</span>
+              <span>JavaScript</span>
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- ==================== Item End ==================== -->
+    </ul>
+  </div>
+
+  <div class="footerContainer">
+    <p>Challenge by:<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
+    <br>
+    Coded by:<a href="https://www.linkedin.com/in/vinicios-alves/" target="_blank"> Vinicios Alves</a>.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
